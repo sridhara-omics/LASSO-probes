@@ -303,7 +303,7 @@ FractionCoveragePlot<-ggplot(filteredData,aes(x=steps, y=FractionCoverage, colou
 FractionCoveragePlot
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots-1.png)<!-- -->
 
 ```r
 ggsave("FractionCoveragePlot.pdf")
@@ -359,7 +359,7 @@ axis.text.x  = element_text(angle=90, vjust=0.5, size=6), axis.text.y  = element
 VIOLINplot
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots2-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots2-1.png)<!-- -->
 
 ```r
 ggsave("VIOLINplot.pdf")
@@ -380,7 +380,7 @@ axis.text.x  = element_text(angle=90, vjust=0.5, size=6), axis.text.y  = element
 VIOLINFPKMplot
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots3-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots3-1.png)<!-- -->
 
 ```r
 ggsave("VIOLINFPKMplot.pdf")
@@ -411,7 +411,7 @@ annotate("text", x = 2000, y = 1000, size=6, color="black",
 DepthCapturePlot
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots4-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots4-1.png)<!-- -->
 
 ```r
 ggsave("DepthCapturePlot.pdf")
@@ -443,7 +443,7 @@ GeneCovered <- ggplot(filteredGeneCoverage, aes(x=PosIndex, y=FrequencyLASSO, fi
 GeneCovered
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots5-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots5-1.png)<!-- -->
 
 ```r
 ggsave("GeneCovered-200-2ML-E_coli_S4.pdf", width = 40, height = 40)
@@ -502,7 +502,7 @@ annotate("text", y = 3.5, x = 2, size=3, color="red",
 WriteText
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots6-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots6-1.png)<!-- -->
 
 ```r
 ggsave("WriteTextplot.pdf")
@@ -514,7 +514,7 @@ ggsave("WriteTextplot.pdf")
 plot_grid(ROCplot, FractionCoveragePlot, VIOLINplot, VIOLINFPKMplot, DepthCapturePlot, GeneCovered, WriteText,  labels = "AUTO", ncol = 2)
 ```
 
-![](latestRMDlasso_files/figure-docx/more plots7-1.png)<!-- -->
+![](latestRMDlasso_files/figure-docx/plots7-1.png)<!-- -->
 
 ```r
 ggsave("Capture-200-2ML-E_coli_S4.pdf", width = 40, height = 40)
